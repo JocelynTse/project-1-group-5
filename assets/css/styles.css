@@ -1,0 +1,24 @@
+body {
+    background: black;
+}
+
+#dropdown1 {
+
+    position: absolute;
+    background: black;
+
+}
+
+#navItems{
+    margin-left: 400px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.iconAlign {
+    margin-top: 0px;
+
+}
