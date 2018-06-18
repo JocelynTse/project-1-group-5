@@ -1,18 +1,23 @@
 
 
 
-$( document ).ready(function() {
-   
-    $(".dropdown-trigger").dropdown({ hover: true,
-                                    coverTrigger: false,
-                                     alignment: "right" }
-                                    
-                                    );
+$(document).ready(function () {
+
+    $(".dropdown-trigger").dropdown({
+        hover: true,
+        coverTrigger: false,
+        alignment: "right"
+    }
+
+    );
 
 
-     $('.sidenav').sidenav({edge: "right"});
-                                });
+    $('.sidenav').sidenav({ edge: "right" });
 
-    $('.carousel.carousel-slider').carousel({
-         fullWidth: true
-     });
+    $('.collapsible').collapsible();
+});
+
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+});
