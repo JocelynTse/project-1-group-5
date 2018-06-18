@@ -3,7 +3,7 @@
 * Project Manager: Jacob George
 * Git Master: Jocelyn Tse
 
-## Proposal 
+"## Proposal 
 
 ### Concept: Central Hub for Sporting Associations
 
@@ -21,7 +21,8 @@
     * Inability to audit outstanding membership dues
 
 ### Goals/Objectives
-    Creating a central sporting registration hub that scales easily to demand is the proposed solution. The registration hub will:
+    Creating a central sporting registration hub that scales easily to demand is the proposed solution.
+    The registration hub will:
     * Be easy to use and branded per sporting association requirements
     * Scale to membership growth (up to 2000 members)
     * Provide members with quick view of current and upcoming sporting opportunities
@@ -94,4 +95,4 @@
     * Check-in for players who will miss games?
     * Playoff brackets
     * Extra options for team captains?
-    * Team chat rooms?
+    * Team chat rooms?"
