@@ -2,6 +2,7 @@
 
 * Project Manager: Jacob George
 * Git Master: Jocelyn Tse
+
 # PROJECT PROPOSAL : Central Hub for Sporting Associations
 ### Introduction
 UT Coding Bootcamp – Project team #5 was formed to complete project #1 requirements
@@ -104,3 +105,4 @@ Project evaluation will be
 * Playoff brackets
 * Extra options for team captains
 * Team chat rooms
+
