@@ -2,6 +2,7 @@
 
 * Project Manager: Jacob George
 * Git Master: Jocelyn Tse
+
 # PROJECT PROPOSAL : Central Hub for Sporting Associations
 ### Introduction
 UT Coding Bootcamp – Project team #5 was formed to complete project #1 requirements
@@ -15,6 +16,7 @@ Paper or excel based approaches are common ways to manage and run sporting assoc
 * Inability to quickly share information and updates with members
 * Inability for members to quickly search , find and get involved in sporting opportunities
 * Inability to audit outstanding membership dues
+
 ### Goals/Objectives
 Creating a central sporting registration hub that scales easily to demand is the proposed solution. The registration hub will:
 * Be easy to use and branded per sporting association requirements
@@ -79,3 +81,28 @@ Project evaluation will be
 * Kick off
 * MVP Sprint Planning
 * Execution
+
+### Appendix
+#### Tasks List
+* Kickoff meeitng - complete
+* Create wireframe -- in progress
+* Confirm styling for MVP -- in progress
+* Complete Materilize components review - in progress
+* Coding Tasks assignments - not started
+* Start Build - not started
+#### More detailed tasks (WIP)
+* Create user validation logic
+* Log in process decision
+* Landing page content confirmation
+* Find inspiration model site -- complete
+* Create schedule calendar
+* Admin access process
+* Create up to date score tracker: update score after game
+* Create leaderboard
+* Create announcements section
+* Map game locations and distance : 1700 S 96th Street , West Allis, WI 53214
+* Check-in for players who will miss games?
+* Playoff brackets
+* Extra options for team captains
+* Team chat rooms
+
