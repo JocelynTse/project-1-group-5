@@ -105,4 +105,3 @@ Project evaluation will be
 * Playoff brackets
 * Extra options for team captains
 * Team chat rooms
-
