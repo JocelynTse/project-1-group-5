@@ -38,15 +38,18 @@
     <div class="card">
       <h4 class="card-header">Registration Form</h5>
         <div class="card-body">
-          <h5 class="card-title">Player Information</h5>
-          <form class="col s12">
+
+          <form class="col s12"></form>
+
+          <div>
+            <h5 class="card-title">Player Information</h5>
 
             <div class="row">
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                 <label for="nameLastPlayer">Last Name</label>
                 <input type="text" class="form-control validate" id="nameLastPlayer">
               </div>
-              <div class="input-field col s5">
+              <div class="input-field col s6">
                 <label for="nameFirstPlayer">First Name</label>
                 <input type="text" class="form-control validate" id="nameFirstPlayer">
               </div>
@@ -55,7 +58,7 @@
             <div class="row">
               <div class="input-field col s6">
                 <label for="phoneNumberPlayer">Phone Number</label>
-                <input type="text" class="form-control validate" id="phoneNumber">
+                <input type="text" class="form-control validate" id="phoneNumberPlayer">
               </div>
             </div>
 
@@ -72,10 +75,10 @@
                 <input type="text" class="form-control validate" id="cityPlayer">
               </div>
               <div class="input-field col s3">
-                <select>
+                <select id="statePlayer">
                   <option value="" disabled selected>Choose one</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
+                  <option value="TX">TX</option>
+                  <option value="WI">WI</option>
                   <option value="3">Option 3</option>
                 </select>
                 <label for="statePlayer">State</label>
@@ -93,55 +96,60 @@
               </div>
               <div class="input-field col s4">
                 <label for="agePlayer">Age</label>
+                <input type="text" class="form-control validate" id="agePlayer">
               </div>
               <div class="input-field col s4">
-                <label for="genderPlayer">Gender</label>
-                <select>
+                <select id="genderPlayer">
                   <option value="" disabled selected>Choose one</option>
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
                 </select>
+                <label for="genderPlayer">Gender</label>
               </div>
             </div>
-          </form>
+
+          </div>
 
           <div>
             <h5 class="card-title">Parent Information</h5>
             <br>
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <label for="nameLastParent">Last Name</label>
-                  <input type="text" class="form-control validate" id="nameLastParent">
-                </div>
-                <div class="input-field col s6">
-                  <label for="nameFirsParent">First Name</label>
-                  <input type="text" class="form-control validate" id="nameFirstParent">
-                </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="nameLastParent">Last Name</label>
+                <input type="text" class="form-control validate" id="nameLastParent">
               </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <label for="phoneNumberParent">Phone Number</label>
-                  <input type="text" class="form-control validate" id="phoneNumberParent">
-                </div>
-                <div class="input-field col s6">
-                  <label for="phoneTypeParent"></label>
-                  <select>
-                    <option value="" disabled selected>Choose one</option>
-                    <option value="1">Home</option>
-                    <option value="2">Mobile</option>
-                    <option value="3">Work</option>
-                    <option value="4">Other</option>
-                  </select>
-                </div>
+              <div class="input-field col s6">
+                <label for="nameFirstParent">First Name</label>
+                <input type="text" class="form-control validate" id="nameFirstParent">
               </div>
-            </form>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="phoneNumberParent">Phone Number</label>
+                <input type="text" class="form-control validate" id="phoneNumberParent">
+              </div>
+              <div class="input-field col s6">
+                <select id="phoneTypeParent">
+                  <option value="" disabled selected>Choose one</option>
+                  <option value="Home">Home</option>
+                  <option value="Mobile">Mobile</option>
+                  <option value="Work">Work</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label for="phoneTypeParent">Phone Type</label>
+              </div>
+            </div>
           </div>
 
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+          </form>
 
         </div>
+
     </div>
-    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+  </div>
 
   </div>
 
