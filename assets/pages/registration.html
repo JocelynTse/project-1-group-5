@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Registration Form</title>
+      <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
+      <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+            <div class="row">
+                
+                    <div class="col s5">
+                        <nav>
+                            <div class=" center nav-wrapper black">
+                                <!-- <a href="#!" class="brand-logo center">Logo</a> -->
+                                <!-- <img src="../project-1-group-5/assets/images/34B4B704-.png"> -->
+                                <!-- <ul class="left hide-on-med-and-down"> -->
+                                <ul id="navItems1">
+                                    <li style="font-size: large">
+                                        <a href="../../index.html">Home</a>
+                                    </li>
+                                    <li style="margin-left: 30px">
+                                        <a href="">Register</a>
+                                    </li>
+                                    <li  style="margin-left: 30px">
+                                            <a href="">League</a>
+                                    <li class="active" style="margin-left: 30px">
+                                        <a href="">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                
+                    </div>
+                    <div class="col s3">
+                        <a href="#!">
+                            <img id="logo" src="../images/34B4B704-.png">
+                        </a>
+                    </div>
+                    <div class="col s4">
+                        <ul id="slide-out" class="sidenav">
+                
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <i class="material-icons">whatshot</i>Final Scores
+                                        <span class="new badge">3</span>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <t style="margin-left: 30px">UFS v NG : 3-2</t>
+                                            <br>
+                                            <t style="margin-left: 30px">UFS v NG : 3-2</t>
+                                            <br>
+                                            <t style="margin-left: 30px">UFS v NG : 3-2</t>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header" id="header">
+                                        <i class="material-icons">wb_sunny</i>Weather Watch (3 Day)</div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <t style="margin-left: 35px" id="day1">Thur </t>
+                                            <t style="margin-left: 60px" id="day2">Fri </t>
+                                            <t style="margin-left: 70px" id="day3">Sat</t>
+                                            <br>
+                                            <t style="margin-left: 34px">
+                                                <img src="http://openweathermap.org/img/w/10d.png" id="icon1"> </t>
+                                            <t style="margin-left: 34px">
+                                                <img src="http://openweathermap.org/img/w/10d.png" id="icon2">
+                                                <t style="margin-left: 34px">
+                                                    <img src="http://openweathermap.org/img/w/10d.png" id="icon3">
+                                                    <br>
+                                                    <t style="margin-left: 35px" id="minmax1">65/78 </t>
+                                                    <t style="margin-left: 54px" id="minmax2">55/88 </t>
+                                                    <t style="margin-left: 44px" id="minmax3">55/88 </t>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                                    <div class="collapsible-header">
+                                                        <i class="material-icons">whatshot</i>GT v ULA</div>
+                                                    <div class="collapsible-body">
+                                                        <span style="margin-left: 30px">2-0</span>
+                                                    </div>
+                                                </li> -->
+                            </ul>
+                        </ul>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating pulse left gameScore">
+                            <i class="large material-icons">announcement</i>
+                        </a>
+                
+                    </div>
+                
+                </div>
+            <div class="row">
+                <div class="col s4"></div>
+                    <form class="col s4">
+                      <div class="row" style="margin-left: 30px">
+                        <div class="input-field col s6">
+                          <input  id="first_name" type="text" class="validate" style="color: white">
+                          <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="last_name" type="text" class="validate" style="color: white">
+                          <label for="last_name">Last Name</label>
+                        </div>
+                      </div>
+                     
+                      
+                      <div class="row" style="margin-left: 30px">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate" style="color: white">
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                      
+                    </form>
+                  </div>
+
+            <div class="row" >
+                    <div class="col s4"></div>
+                    <div class="col s4">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">textsms</i>
+                          <input type="text" id="autocomplete-input" class="autocomplete" style="color: white">
+                          <label for="autocomplete-input">Ethinicity</label>
+
+                          
+                          <input type="text" class="datepicker"  style="color: white">
+                          
+                          
+                          <p>
+                                <label>
+                                  <t style="margin-left: 40px">Gender:</t> 
+                                  <input class="with-gap" name="group3" type="radio" checked />
+                                  <span style="margin-left: 40px">Male</span>
+                                </label>
+                                <label>
+                                        <input class="with-gap" name="group3" type="radio" unchecked />
+                                        <span>Female</span>
+                                      </label>
+                              </p>
+                              <button class="btn waves-effect waves-light" type="button" style="margin-left: 40px" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                  </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            
+
+                                   
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="../javascript/app.js"></script>
+    </body>
+  </html>
