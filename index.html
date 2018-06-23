@@ -4,12 +4,12 @@
 
      <!--Import Reset CSS-->
      <link href="../project-1-group-5/assets/css/reset.css" rel="stylesheet">
-
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+     
      <!-- Import materialize CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+     
+          <!--Import Google Icon Font-->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <!-- Import custom CSS -->
      <link rel="stylesheet" type="text/css" media="screen" href="../project-1-group-5/assets/css/stylesMain.css" />
@@ -105,8 +105,45 @@
                                    
                                 </div>
                                 <div class="col s8" >
-                                    
-                                    <img id="mapblock" src="../project-1-group-5/assets/images/gmaps.png" alt="" >
+                                    <div id="map">
+                                    </div>
+                                    <div class="row">
+                                        <div id="search-directions" class="col s12">
+                                            <i id="recenter" class="small material-icons btn-small waves-effect waves-red transparent grey-text text-darken-2 tooltipped"
+                                                data-position="left" data-tooltip="re-center map">my_location</i>
+                                            <input id="origin-input" type="text" placeholder="Get directions from...">
+                                            <i id="direction-input" class="small material-icons waves-effect waves-light btn red lighten-1 modal-trigger tooltipped"
+                                                data-position="bottom" data-tooltip="click for list directions" data-target="direction-modal">directions</i>
+                                        </div>
+                                    </div>
+                                    <div id="mode-selector">
+                                        <div class="row">
+                                            <ul class="col s12">
+                                                <li>
+                                                    <a id="changemode-walking" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="walking directions">
+                                                        <img src='./assets/images/walk_icon.png' alt='Walking'>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="changemode-transit" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="public transit directions">
+                                                        <img src='./assets/images/bus_icon.png' alt='Transit'>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a id="changemode-driving" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="driving directions">
+                                                        <img src='./assets/images/car_icon.png' alt='Driving'>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal Structure -->
+                                    <div id="direction-modal" class="modal">
+                                        <a href="#!" class="modal-close waves-effect-white waves-red text-grey red lighten-1 btn-flat">Dismiss</a>
+                                        <div id="direction-display" class="modal-content">
+                                        </div>
+                                    </div>
                                 
                                 </div>
 
@@ -143,5 +180,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- Load Custom JavaScript File-->
     <script src="../project-1-group-5/assets/javascript/appMain.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQSStia1lZuiZOsI89SzlD_r07Fy8Uc8E&libraries=places&callback=initMap"></script>
     </body>
   </html>
