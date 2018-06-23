@@ -1,4 +1,4 @@
-// Initialize Firebase
+// Initialize Firebase/
 var config = {
     apiKey: "AIzaSyA_3PFPpf3AUpdeSzeKIH-Uf_dD5X89BgY",
     authDomain: "sportsreghub.firebaseapp.com",
@@ -11,6 +11,8 @@ firebase.initializeApp(config);
 
 let database = firebase.database();
 
+// Set variables for inputs
+
 let name = "";
 let address = "";
 let phone = "";
@@ -20,6 +22,8 @@ let gender = "";
 let parent = "";
 let parentPhone = "";
 let phoneType = "";
+
+// Capture input values on submit
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
@@ -44,6 +48,8 @@ $("#submit").on("click", function (event) {
     console.log(parentPhoneNew);
     console.log(phoneTypeNew);
 
+    // Store input values to firebase
+
     database.ref().push({
         name: nameNew,
         address: addressNew,
@@ -57,6 +63,8 @@ $("#submit").on("click", function (event) {
 
     })
 });
+
+// Pull stored input values to playerlist
 
 database.ref().on("child_added", function (childSnapshot) {
 
