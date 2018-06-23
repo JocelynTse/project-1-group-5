@@ -93,4 +93,13 @@ nav6{
 
 }
 
+/* SPosition for pulsing sidenav button */
+
+#sideNavBar {
+    position: relative;
+    right: 214px;
+    top: -93px;
+}
+
+
 
