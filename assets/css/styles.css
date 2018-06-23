@@ -11,7 +11,7 @@
     margin: 20px 0px 0px 12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
-    width: 300px;
+    width: 250px;
   }
 
   #origin-input:focus,
@@ -23,5 +23,7 @@
       margin: 10px;
   }
 
-
+  #recenter {
+    title : 'Click to recenter the map';
+  }
 

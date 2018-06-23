@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
-    
+
 </head>
 
-<body class="container">
-       
-            <input id="origin-input" type="text" placeholder="Get directions from...">
+<body class="z-depth-5 container">
+    <div class="row">
+            <div id="map" class="col s12">
+            </div>
 
-        <div id="mode-selector">
             <div class="row">
-                <ul class ="col s12">
-            <li><a id="changemode-walking" class="btn-floating blue lighten-1"><img src= './assets/images/walk_icon.png' alt='Walking'></a></li>
-            <li><a id="changemode-transit" class="btn-floating blue lighten-1"><img src= './assets/images/bus_icon.png' alt='Transit'></a></li>
-            <li><a id="changemode-driving" class="btn-floating blue lighten-1"><img src= './assets/images/car_icon.png' alt='Driving'></a></li>
-                </ul>
+                <div id="search-directions" class="col s12">
+                    <i id="recenter" class="small material-icons btn-small waves-effect waves-red transparent grey-text text-darken-2 tooltipped"
+                        data-position="left" data-tooltip="re-center map">my_location</i>
+                    <input id="origin-input" type="text" placeholder="Get directions from...">
+                    <i id="direction-input" class="small material-icons waves-effect waves-light btn red lighten-1 modal-trigger tooltipped"
+                        data-position="bottom" data-tooltip="click for list directions" data-target="direction-modal">directions</i>
+                </div>
+
+            </div>
+            <div id="mode-selector">
+                <div class="row">
+                    <ul class="col s12">
+
+                        <li>
+                            <a id="changemode-walking" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="walking directions">
+                                <img src='./assets/images/walk_icon.png' alt='Walking'>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="changemode-transit" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="public transit directions">
+                                <img src='./assets/images/bus_icon.png' alt='Transit'>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="changemode-driving" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="driving directions">
+                                <img src='./assets/images/car_icon.png' alt='Driving'>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="direction-modal" class="modal">
+                <a href="#!" class="modal-close waves-effect-white waves-red text-grey red lighten-1 btn-flat">Dismiss</a>
+                <div id="direction-display" class="modal-content">
+                </div>
+
+            </div>
+        </div>
     </div>
-    </div>
-    <div id="right-panel"></div>
-
-
-
 </body>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQSStia1lZuiZOsI89SzlD_r07Fy8Uc8E&libraries=places&callback=initMap"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script type="text/javascript" src="./assets/javascript/app.js"></script>
-</html> 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQSStia1lZuiZOsI89SzlD_r07Fy8Uc8E&libraries=places&callback=initMap"></script>
+
+</html>
