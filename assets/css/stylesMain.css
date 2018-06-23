@@ -101,5 +101,28 @@ nav6{
     top: -93px;
 }
 
+/* Styles for simple reg form */
+#regForm {
+    background: black;
+    color: white;
+}
+
+.form-control {
+    color: white;
+}
+
+#navBar {
+    position: relative;
+    z-index: 3 ;
+}
+
+#formBox{
+   position: relative;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+
+
 
 
