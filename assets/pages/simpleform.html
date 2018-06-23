@@ -10,6 +10,9 @@
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Modal cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 
 
 </head>
@@ -141,7 +144,13 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+          <div id="modal" class="modal">
+            <p>Thanks for registering! We will be in contact!</p>
+            <a href="../../index.html">Return to Home Page</a>
+          </div>
+
+          <!-- Link to open the modal -->
+          <button type="submit" class="btn btn-primary" id="submit"><a href="#modal" rel="modal:open">Submit</a></button>
 
           </form>
 
@@ -162,6 +171,8 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- Modal JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <!-- JS for form -->
   <script type="text/javascript" src="../javascript/form.js"></script>
   <!-- JS for storage -->
