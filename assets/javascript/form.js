@@ -1,8 +1,9 @@
+//ZIP Code API
 $(function() {
   // IMPORTANT: Fill in your client key
   var clientKey = "js-xBAq80xy51mRQusZsmqtPY5sTNStdGc8Rw8MbDhsN0Db38wvDafFVC2lexWA8Qhr";
   var cache = {};
-  var container = $("#example1");
+  var container = $("#statePlayer");
   var errorDiv = container.find("div.text-error");
   
   /** Handle successful response */
@@ -65,6 +66,9 @@ $(function() {
   }).trigger("change");
 });
 
+// Calendar modal
 $('.datepicker').datepicker();
+
+// Select fields
 $('select').formSelect();
 

@@ -28,15 +28,15 @@ let phoneType = "";
 $("#submit").on("click", function (event) {
     event.preventDefault();
 
-    var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val().trim();
-    var addressNew = $("#addressPlayer").val() + ", " + $("#cityPlayer").val() + ", " + $("#statePlayer").val();
-    var phoneNew = $("#phoneNumberPlayer").val();
+    var nameNew = $("#nameFirstPlayer").val().trim() + " " + $("#nameLastPlayer").val().trim();
+    var addressNew = $("#addressPlayer").val().trim() + ", " + $("#cityPlayer").val().trim() + ", " + $("#statePlayer").val() + " " + $("#ZIPPlayer").val().trim();
+    var phoneNew = $("#phoneNumberPlayer").val().trim();
     var dobNew = $("#DOBPlayer").val();
-    var ageNew = $("#agePlayer").val();
+    var ageNew = $("#agePlayer").val().trim();
     var genderNew = $("#genderPlayer").val();
-    var parentNew = $("#nameFirstParent").val() + " " + $("#nameLastParent").val();
-    var parentPhoneNew = $("#phoneNumberParent").val();
-    var phoneTypeNew = $("#phoneTypeParent").val();
+    var parentNew = $("#nameFirstParent").val().trim() + " " + $("#nameLastParent").val().trim();
+    var parentPhoneNew = $("#phoneNumberParent").val().trim();
+    var phoneTypeNew = $("#phoneTypeParent").val().trim();
 
     console.log(nameNew);
     console.log(addressNew);
