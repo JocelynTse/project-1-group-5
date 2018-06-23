@@ -19,16 +19,23 @@ var config = {
   $("#submit").on("click", function (event) {
     event.preventDefault();
   
-    var nameNew = $("#nameFirstPlayer").val().trim() + $("#nameLastPlayer").val().trim();
-    var dobNew = $("#DOBPlayer").val().trim();
-    var parentNew = $("#nameFirstEmer1").val().trim() + $("#nameLastEmer1").val().trim();
-    var phoneNew = $("#phoneNumberPlayer").val().trim();
+    var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val().trim();
+    var dobNew = $("#DOBPlayer").val();
+    var parentNew = $("#nameParent").val().trim() + " " + $("#nameLastEmer1").val().trim();
+    var phoneNew = $("#phoneNumberPlayer").val();
   
+    console.log($("#nameFirstPlayer").val());
+    console.log($("#DOBPlayer").val());
+
+    //name = $("#nameFirstPlayer").val();
+
+    console.log(nameNew);
+
     database.ref().push({
       name: nameNew,
       dob: dobNew,
-      parent: parentNew,
-      phone: phoneNew,
+      //parent: parentNew,
+      //phone: phoneNew,
     })
   });
   
@@ -51,6 +58,6 @@ var config = {
   
   }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code)
-  })
+  });
   
   
