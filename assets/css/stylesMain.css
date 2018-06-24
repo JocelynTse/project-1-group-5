@@ -111,7 +111,9 @@ nav6{
     color: white;
 }
 
-#navBar {
+
+
+#navBar { /* This positions the nav bar to go over the formbox */
     position: relative;
     z-index: 3 ;
 }
@@ -120,6 +122,33 @@ nav6{
    position: relative;
     margin-top: 150px;
     z-index: 1;
+}
+
+.dropdown-trigger{  /* This is the internal class that materialize uses */
+    color: white;
+}
+
+.datepicker-calendar-container{
+    color: black;
+}
+
+
+.datepicker{
+    color: white;
+}
+
+#players {
+    position: relative;
+    top: 150px;
+    background: black; 
+    color: white
+}
+
+#players-table{
+    margin-top:170px; 
+    background: black;
+    color: white
+
 }
 
 
