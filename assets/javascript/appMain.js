@@ -46,9 +46,22 @@ method: "GET"
 
 
 //event listener for Materialize 'tooltip' to get info for custom map buttons without using UI method
+
+//Materialize JS Items:
+
 $(document).ready(function () {
     $('.tooltipped').tooltip();
+    $('.carousel-slider').carousel({
+      fullWidth: true,
+      duration: 200,
+    });
+    autoplay()   
   });
+  
+  function autoplay() {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 8000);
+  }
   
   //adds Google map to div
   function initMap() {

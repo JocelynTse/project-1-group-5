@@ -28,13 +28,14 @@ body{
 
   /* End of scrolly fotter style */
 
-  #mapblock{
-    
-    height:325px; 
-    width: 800px; 
-    padding-left: 40px;
-    
-  }
+.carousel {
+    margin-top: 300px;
+}
+
+/* To reduce the size of picture, restrict the width below */
+#carousel-main {
+   /* width: 1200px; */
+}
 
 
 /* Positioning rules for soccer balls and Navigation text. Containig block that 
