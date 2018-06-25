@@ -44,6 +44,7 @@ method: "GET"
 });
 
 //Materialize JS Items:
+
 $(document).ready(function () {
   $('.sidenav').sidenav({ edge: "right" });
   $('.collapsible').collapsible();
