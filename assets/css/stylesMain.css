@@ -28,13 +28,14 @@ body{
 
   /* End of scrolly fotter style */
 
-  #mapblock{
-    
-    height:325px; 
-    width: 800px; 
-    padding-left: 40px;
-    
-  }
+.carousel {
+    margin-top: 300px;
+}
+
+/* To reduce the size of picture, restrict the width below */
+#carousel-main {
+   width: 500px;  
+}
 
 
 /* Positioning rules for soccer balls and Navigation text. Containig block that 
@@ -97,8 +98,8 @@ nav6{
 
 #sideNavBar {
     position: relative;
-    right: 214px;
-    top: -93px;
+    right: 205px;
+    top: -795px;
 }
 
 /* Styles for simple reg form */
@@ -153,5 +154,35 @@ nav6{
 
 
 
+#map {
+    height: 600px;
+    width: 600px;
+  }
+
+  #origin-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0px 0px 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 250px;
+  }
+
+  #origin-input:focus,
+  #destination-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .btn-floating {
+      margin: 10px;
+  }
+
+  #quote {
+    position: relative;
+    color: white;
+    left: 250px
+  }
 
 
