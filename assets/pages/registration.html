@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+  <!--Reset.css-->
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center" /a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="">Link1</a>
+          </li>
+          <li>
+            <a href="">Link2</a>
+          </li>
+          <li>
+            <a href="">Link3</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <div class="card">
+      <h4 class="card-header">Registration Form</h5>
+        <div class="card-body">
+          <h5 class="card-title">Player Information</h5>
+          <form class="col s12">
+
+            <div class="row">
+              <div class="input-field col s5">
+                <label for="nameLastPlayer">Last Name</label>
+                <input type="text" class="form-control validate" id="nameLastPlayer">
+              </div>
+              <div class="input-field col s5">
+                <label for="nameFirstPlayer">First Name</label>
+                <input type="text" class="form-control validate" id="nameFirstPlayer">
+              </div>
+              <div class="input-field col s2">
+                <label for="nameMIPlayer">MI</label>
+                <input type="text" class="form-control validate" id="nameMIPlayer">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="phoneNumberPlayer">Phone Number</label>
+                <input type="text" class="form-control validate" id="phoneNumber">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <label for="addressPlayer">Address</label>
+                <input type="text" class="form-control validate" id="addressPlayer">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="cityPlayer">City</label>
+                <input type="text" class="form-control validate" id="cityPlayer">
+              </div>
+              <div class="input-field col s3">
+                <select>
+                  <option value="" disabled selected>Choose your State</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label for="statePlayer">State</label>
+              </div>
+              <div class="input-field col s3">
+                <label for="ZIPPlayer">ZIP Code</label>
+                <input type="text" class="form-control validate" id="ZIPPlayer">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s4">
+                <label for="DOBPlayer">Date of Birth</label>
+                <input type="text" class="datepicker" id="DOBPlayer">
+              </div>
+              <div class="input-field col s4">
+                <label for="agePlayer">Age</label>
+              </div>
+              <div class="input-field col s4">
+                <label for="genderPlayer">Gender</label>
+                <select>
+                  <option value="" disabled selected></option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <div>
+            <h5 class="card-title">Emergency Contact Information</h5>
+            <br>
+            <h6>Emergency Contact #1</h6>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="nameLastEmer1">Last Name</label>
+                  <input type="text" class="form-control validate" id="nameLastEmer1">
+                </div>
+                <div class="input-field col s6">
+                  <label for="nameFirstEmer1">First Name</label>
+                  <input type="text" class="form-control validate" id="nameFirstEmer1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="phoneNumberEmer1">Phone Number</label>
+                  <input type="text" class="form-control validate" id="phoneNumberEmer1">
+                </div>
+                <div class="input-field col s6">
+                  <label for="phoneTypeEmer1"></label>
+                  <select>
+                    <option value="" disabled selected>Choose phone type...</option>
+                    <option value="1">Home</option>
+                    <option value="2">Mobile</option>
+                    <option value="3">Work</option>
+                    <option value="4">Other</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <br>
+            <h6>Emergency Contact #2</h6>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="nameLastEmer2">Last Name</label>
+                  <input type="text" class="form-control validate" id="nameLastEmer2">
+                </div>
+                <div class="input-field col s6">
+                  <label for="nameFirstEmer2">First Name</label>
+                  <input type="text" class="form-control validate" id="nameFirstEmer2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="phoneNumberEmer2">Phone Number</label>
+                  <input type="text" class="form-control validate" id="phoneNumberEmer2">
+                </div>
+                <div class="input-field col s6">
+                  <label for="phoneTypeEmer2"></label>
+                  <select>
+                    <option value="" disabled selected></option>
+                    <option value="1">Home</option>
+                    <option value="2">Mobile</option>
+                    <option value="3">Work</option>
+                    <option value="4">Other</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+          <h5 class="card-title">Additional Information</h5>
+          <br>
+          <h6>Medical Conditions</h6>
+          <div class="row">
+            <form class="col s12">
+              <div class="input-field col s12">
+                <label for="medInfo"></label>
+                <textarea id="medInfo" class="materialize-textarea"></textarea>
+              </div>
+            </form>
+          </div>
+          <h6>Ethnicity</h6>
+          <br>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>American Indian or Alaska Native</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Asian</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Black or African American</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Hispanic or Latino</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Native Hawaiian or Other Pacific Islander</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>White</span>
+              </label>
+            </p>
+          </form>
+
+
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+  </div>
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- JS for form -->
+  <script type="text/javascript" src="../javascript/form.js"></script>
+  <!-- JS for storage -->
+  <script type="text/javascript" src="../javascript/storage.js"></script>
+
+</body>
+
+</html>

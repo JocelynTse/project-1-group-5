@@ -1,0 +1,51 @@
+body {
+    background: black;
+    
+    
+    
+}
+
+#dropdown1 {
+
+    position: absolute;
+    background: black;
+
+}
+
+#navItems{
+    margin-left: 400px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.iconAlign {
+    margin-top: 0px;
+
+}
+
+
+
+#three {
+    background: orange;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+
+}
+
+#navItems1 {
+    margin-left: 200px;
+    
+    
+}
+
+.gameScore{
+    margin-top: 20px;
+}
+
+

@@ -1,0 +1,122 @@
+/* Adding a main content div and then giving this div a background color 
+  of whatever you want your page to be otherwise you will just end up having text 
+  overlapping & you will want to give your main content div a z-index of 1 or 
+  something and then fix your footer behind that and give it a z-index smaller 
+  than that in my example I gave it a z-index of -1. 
+  Then your main content div will scroll over the top of your footer. 
+  You will probably want to give your footer a height and your body a padding-bottom of the same height. */
+
+body{
+    padding-bottom:500px;
+    background: black;
+  }
+  .main-content{
+    min-height:100vh;
+    background: black;
+    z-index:1;
+  }
+  footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:400px;
+    background: white;
+    color: black;
+    z-index:-1;
+  }
+
+  /* End of scrolly fotter style */
+
+.carousel {
+    margin-top: 300px;
+}
+
+/* To reduce the size of picture, restrict the width below */
+#carousel-main {
+   /* width: 1200px; */
+}
+
+
+/* Positioning rules for soccer balls and Navigation text. Containig block that 
+is bieng position aginst is the parent nav block*/
+
+
+nav1{ 
+    position: absolute;
+    left: 13px;
+    top: -2px;
+    font-size: x-large;
+}
+nav2{
+    position: absolute;
+ 
+    left: 103px;
+    top: -2px;
+    font-size: x-large;
+}
+nav3{
+    position: absolute;
+    
+    left: 190px;
+    top: -2px;
+    font-size: x-large;
+}
+nav4{
+    position: absolute;
+   
+    left: 285px;
+    top: -2px;
+    font-size: x-large;
+}
+nav5{
+    position: absolute;
+    
+    right: 100px;
+    top: -2px;
+    font-size: x-large;
+}
+nav6{
+    position: absolute;
+   
+    right: 10px;
+    top: -2px;
+    font-size: x-large;
+}
+
+/* End of navigation items styling  */
+
+/* Style for footer navigation Items */
+.footerItem{
+    font-size: 40px;
+    border: solid black;
+    padding: 10px;
+
+}
+
+#map {
+    height: 600px;
+    width: 600px;
+  }
+
+  #origin-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0px 0px 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 250px;
+  }
+
+  #origin-input:focus,
+  #destination-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .btn-floating {
+      margin: 10px;
+  }
+
+
