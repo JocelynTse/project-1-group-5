@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../Calendar/assets/css/resets.css">
+    <link rel="stylesheet" type="text/css" href="../Calendar/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="col-lg-8" id="normal">
+                <h1 class="display-1">Soccer Games Schedule</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        
+                        <div class="container">
+                      
+                                <th scope="col">Game Date:</th>
+                                <input type="text" id="dateGame" class="datepicker" placeholder="Pick a Game Date">
+                    
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <table class="table table-hover">
+
+                                <tr>
+                                    <th scope="col">Home Team</th>
+                                    <th scope="col">Visit Team</th>
+                                    <th scope="col">Game Time</th>
+                                    <th scope="col">Field Number</th>
+                                    <th scope="col">Division</th>
+                                </tr>
+                                <tbody id="schedule">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../Calendar/assets/javascript/cal.js"> </script>
+        
+</body>
+
+</html>
