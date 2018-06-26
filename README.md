@@ -77,7 +77,7 @@ Project evaluation will be
 * Done by William Shepheard based on UT Coding Bootcamp grading requirements
 
 ### Next Steps
-* Proposal Approval
+* Proposal Approval (It has been approved)
 * Kick off
 * MVP Sprint Planning
 * Execution
