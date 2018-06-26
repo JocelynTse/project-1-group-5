@@ -8,6 +8,8 @@
   <title>Registration Form</title>
   <!--Reset.css-->
   <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/stylesMain.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
@@ -15,29 +17,71 @@
 </head>
 
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center" /a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-            <a href="">Link1</a>
-          </li>
-          <li>
-            <a href="">Link2</a>
-          </li>
-          <li>
-            <a href="">Link3</a>
-          </li>
-        </ul>
-    </div>
-  </nav>
 
+  <div class="main-content">
+        
+      <!--Header Section Start-->
+      <div class="row">
+          <nav style="margin-top: 10px" id="navBar">
+              <div class="nav-wrapper black">
+                  <a href="#" class="brand-logo center">
+                      <img src="../../assets/images/logosmall.png" alt="" style="opacity: 0.5;">
+                  </a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+  
+                      <li>
+                          <a href="../../index.html">
+                              <img src="../../assets/images/soccer-ball.png" alt="Home" style="opacity: 0.5;">
+                              <nav1>Home</nav1>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <img src="../../assets/images/soccer-ball.png" alt="Events" style="opacity: 0.5;">
+                              <nav2>Events</nav2>
+                          </a>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <img src="../../assets/images/soccer-ball.png" alt="Register" style="opacity: 0.5;">
+                              <nav3>Register</nav3>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                              <img src="../../assets/images/soccer-ball.png" alt="About Us" style="opacity: 0.5;">
+                              <nav4>About Us</nav4>
+                          </a>
+                      </li>
+                  </ul>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li>
+                          <a href="">
+                              <img src="../../assets/images/soccer-ball.png" alt="Sign In" style="opacity: 0.5;">
+                              <nav5>Sign In</nav5>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="../../assets/pages/playerlist.html">
+                              <img src="../../assets/images/soccer-ball.png" alt="Admin" style="opacity: 0.5;">
+                              <nav6>Admin</nav6>
+                          </a>
+                      </li>
+  
+                  </ul>
+  
+          </nav>
+      </div>
+      <!--Header Section End-->
+      
 
-  <div class="container">
+  <!--Registration Form Starts-->
+  <div class="container" id="formBox" >
 
-    <div class="card">
-      <h4 class="card-header">Registration Form</h5>
-        <div class="card-body">
+    <div class="card" style="background: black" >
+      <h4 class="card-header" style="background: black; color: white" >Registration Form</h5>
+        <div class="card-body" id="regForm">
 
           <form class="col s12"></form>
 
@@ -47,7 +91,7 @@
             <div class="row">
               <div class="input-field col s6">
                 <label for="nameLastPlayer">Last Name</label>
-                <input type="text" class="form-control validate" id="nameLastPlayer">
+                <input type="text" class="form-control validate" id="nameLastPlayer" >
               </div>
               <div class="input-field col s6">
                 <label for="nameFirstPlayer">First Name</label>
@@ -74,7 +118,7 @@
                 <label for="cityPlayer">City</label>
                 <input type="text" class="form-control validate" id="cityPlayer">
               </div>
-              <div class="input-field col s3">
+              <div class="input-field col s3" >
                 <select id="statePlayer">
                   <option value="" disabled selected>Choose one</option>
                   <option value="TX">TX</option>
@@ -152,6 +196,41 @@
   </div>
 
   </div>
+
+  <!--Registration Form Ends-->
+
+  <!--Footer Section Begin-->
+  <footer>
+      <div Class="container">
+        <div CLass="row">
+          <div style="margin-top:30px"> 
+                  <div class="col s4" >
+                      <div class="row" >
+                          <p class="footerItem" >Events</p>
+                      </div>
+                      <div class="row" >
+                              <p class="footerItem">Register</p>
+                      </div>
+                      <div class="row" >
+                              <p class="footerItem">About Us</p>
+                      </div>
+                      <div class="row" >
+                              <p class="footerItem">Social</p>
+                      </div>
+                     
+                  </div>
+                  <div class="col s8" >
+                      
+                      <img id="mapblock" src="../../assets/images/gmaps.png" alt="" >
+                  
+                  </div>
+
+            </div>
+          
+        </div>
+      </div>
+    </footer>
+<!--Footer Section End-->
 
 
   <!-- Firebase -->

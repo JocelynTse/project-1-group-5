@@ -8,50 +8,102 @@
     <title>Member Information</title>
     <!--Reset.css-->
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/stylesMain.css">
+    
+
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
+   
+    
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center" /a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a href="">Link1</a>
-                    </li>
-                    <li>
-                        <a href="">Link2</a>
-                    </li>
-                    <li>
-                        <a href="">Link3</a>
-                    </li>
-                </ul>
-        </div>
-    </nav>
+        <div class="main-content">
+        
+                <!--Header Section Start-->
+                <div class="row">
+                    <nav style="margin-top: 10px" id="navBar">
+                        <div class="nav-wrapper black">
+                            <a href="#" class="brand-logo center">
+                                <img src="../../assets/images/logosmall.png" alt="" style="opacity: 0.5;">
+                            </a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            
+                                <li>
+                                    <a href="../../index.html">
+                                        <img src="../../assets/images/soccer-ball.png" alt="Home" style="opacity: 0.5;">
+                                        <nav1>Home</nav1>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../../assets/images/soccer-ball.png" alt="Events" style="opacity: 0.5;">
+                                        <nav2>Events</nav2>
+                                    </a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../assets/pages/simpleform.html">
+                                        <img src="../../assets/images/soccer-ball.png" alt="Register" style="opacity: 0.5;">
+                                        <nav3>Register</nav3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../../assets/images/soccer-ball.png" alt="About Us" style="opacity: 0.5;">
+                                        <nav4>About Us</nav4>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="">
+                                        <img src="../../assets/images/soccer-ball.png" alt="Sign In" style="opacity: 0.5;">
+                                        <nav5>Sign In</nav5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="../../assets/images/soccer-ball.png" alt="Admin" style="opacity: 0.5;">
+                                        <nav6>Admin</nav6>
+                                    </a>
+                                </li>
+            
+                            </ul>
+            
+                    </nav>
+                </div>
+
+             <!--Header Section End-->
+
+
 
     <div id="container">
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-header">Player List</div>
+                <div class="card" style="background: black">
+                        
+                    <!-- <div class="card-header">Player List</div> -->
                     <div class="card-body">
                         <div class="container">
-                            <table class="table table-hover">
+                            <h4 class="card-header" id="players"  >Players List</h5>
+                            <table class="table highlight" id="players-table">
+                            
                                 <thead>
                                     <tr>
-                                        <th scope="col">Player Name</th>
-                                        <th scope="col">Address</th>
-                                        <th scope="col">Phone Number</th>
-                                        <th scope="col">Date of Birth</th>
-                                        <th scope="col">Age</th>
-                                        <th scope="col">Gender</th>
-                                        <th scope="col">Parent Name</th>
-                                        <th scope="col">Parent Phone Number</th>
-                                        <th scope="col">Phone Type</th>
+                                        <th scope="col" ><h5 >Player Name</h5></th>
+                                        <th scope="col"><h5>Address</h5></th>
+                                        <th scope="col"><h5>Phone Number</h5></th>
+                                        <th scope="col"><h5>Date of Birth</h5></th>
+                                        <th scope="col"><h5>Age</h5></th>
+                                        <th scope="col"><h5>Gender</h5></th>
+                                        <th scope="col"><h5>Parent Name</h5></th>
+                                        <th scope="col"><h5>Parent Phone Number</h5></th>
+                                        <th scope="col"><h5>Phone Type</h5></th>
                                     </tr>
                                 </thead>
                                 <tbody id="data">
@@ -63,6 +115,42 @@
                 </div>
             </div>
         </div>
+
+
+
+
+          <!--Footer Section Begin-->
+  <footer>
+        <div Class="container">
+          <div CLass="row">
+            <div style="margin-top:30px"> 
+                    <div class="col s4" >
+                        <div class="row" >
+                            <p class="footerItem" >Events</p>
+                        </div>
+                        <div class="row" >
+                                <p class="footerItem">Register</p>
+                        </div>
+                        <div class="row" >
+                                <p class="footerItem">About Us</p>
+                        </div>
+                        <div class="row" >
+                                <p class="footerItem">Social</p>
+                        </div>
+                       
+                    </div>
+                    <div class="col s8" >
+                        
+                        <img id="mapblock" src="../../assets/images/gmaps.png" alt="" >
+                    
+                    </div>
+  
+              </div>
+            
+          </div>
+        </div>
+      </footer>
+  <!--Footer Section End-->
 
         <!-- JQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
