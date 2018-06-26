@@ -7,7 +7,9 @@
   You will probably want to give your footer a height and your body a padding-bottom of the same height. */
 
 body{
-    padding-bottom:500px;
+    /* Solution for links,buttons, etc to work in footer was to 
+        change padding-bottom to margin-bottom; overlap effect still works */
+    margin-bottom:500px;
     background: black;
   }
   .main-content{
@@ -153,10 +155,9 @@ nav6{
 }
 
 
-
+/* Formating for the Google Map and map modal */
 #map {
     height: 600px;
-    width: 600px;
   }
 
   #origin-input {
@@ -178,6 +179,16 @@ nav6{
   .btn-floating {
       margin: 10px;
   }
+  
+  #map-static{
+      height: 380px;
+      padding-bottom:20px;
+  }
+
+/* hack found online to dispaly the google dropdown above modal z*/
+  .pac-container {
+    z-index: 1051 !important;
+}
 
   #quote {
     position: relative;
