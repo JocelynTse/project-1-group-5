@@ -141,7 +141,6 @@ $(document).ready(function () {
     });
   }
 
-
   //autocomplete constructor from Google documentation
   function AutocompleteDirectionsHandler(map) {
     this.map = map;
