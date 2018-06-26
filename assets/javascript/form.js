@@ -72,3 +72,31 @@ $('.datepicker').datepicker();
 // Select fields
 $('select').formSelect();
 
+// Formatter for inputs
+$("#ZIPPlayer").formatter({
+  "pattern": '{{99999}}',
+  'persistent': true
+});
+
+$("#phoneNumberParent").formatter({
+  "pattern": '{{999}}-{{999}}-{{9999}}',
+  'persistent': true
+});
+
+$("#phoneNumberPlayer").formatter({
+  "pattern": '{{999}}-{{999}}-{{9999}}',
+  'persistent': true
+});
+
+
+
+//Email validation
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+//Prevent submit if empty fields
+$("#submit").on("click", function() {
+  
+})

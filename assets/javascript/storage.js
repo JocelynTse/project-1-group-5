@@ -22,6 +22,7 @@ let gender = "";
 let parent = "";
 let parentPhone = "";
 let phoneType = "";
+let parentEmail = "";
 
 // Capture input values on submit
 
@@ -29,14 +30,15 @@ $("#submit").on("click", function (event) {
     event.preventDefault();
 
     var nameNew = $("#nameFirstPlayer").val().trim() + " " + $("#nameLastPlayer").val().trim();
-    var addressNew = $("#addressPlayer").val().trim() + ", " + $("#cityPlayer").val().trim() + ", " + $("#statePlayer").val() + " " + $("#ZIPPlayer").val().trim();
-    var phoneNew = $("#phoneNumberPlayer").val().trim();
+    var addressNew = $("#addressPlayer").val().trim() + ", " + $("#cityPlayer").val().trim() + ", " + $("#statePlayer").val() + " " + $("#ZIPPlayer").val();
+    var phoneNew = $("#phoneNumberPlayer").val();
     var dobNew = $("#DOBPlayer").val();
     var ageNew = $("#agePlayer").val().trim();
     var genderNew = $("#genderPlayer").val();
     var parentNew = $("#nameFirstParent").val().trim() + " " + $("#nameLastParent").val().trim();
-    var parentPhoneNew = $("#phoneNumberParent").val().trim();
-    var phoneTypeNew = $("#phoneTypeParent").val().trim();
+    var parentPhoneNew = $("#phoneNumberParent").val();
+    var phoneTypeNew = $("#phoneTypeParent").val();
+    var parentEmail = $("#emailParent").val();
 
     console.log(nameNew);
     console.log(addressNew);
@@ -47,6 +49,7 @@ $("#submit").on("click", function (event) {
     console.log(parentNew);
     console.log(parentPhoneNew);
     console.log(phoneTypeNew);
+    console.log(parentEmail);
 
     // Store input values to firebase
 
@@ -60,6 +63,7 @@ $("#submit").on("click", function (event) {
         parent: parentNew,
         parentPhone: parentPhoneNew,
         phoneType: phoneTypeNew,
+        parentEmail: emailParent,
 
     })
 });
@@ -77,6 +81,7 @@ database.ref().on("child_added", function (childSnapshot) {
     parent = childSnapshot.val().parent;
     parentPhone = childSnapshot.val().parentPhone;
     phoneType = childSnapshot.val().phoneType;
+    parentEmail = childSnapshot.val().parentEmail;
 
     let tRow = $("<tr>");
 
@@ -89,8 +94,9 @@ database.ref().on("child_added", function (childSnapshot) {
     let parentTab = $("<td>").text(parent);
     let parentPhoneTab = $("<td>").text(parentPhone);
     let phoneTypeTab = $("<td>").text(phoneType);
+    let parentEmailTab = $("<td>").text(parentEmail);
 
-    tRow.append(nameTab, addressTab, phoneTab, dobTab, ageTab, genderTab, parentTab, parentPhoneTab, phoneTypeTab);
+    tRow.append(nameTab, addressTab, phoneTab, dobTab, ageTab, genderTab, parentTab, parentPhoneTab, phoneTypeTab, parentEmailTab);
     $("tbody").append(tRow);
 
 }, function (errorObject) {
