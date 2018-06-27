@@ -82,6 +82,11 @@ $(document).ready(function () {
     // Origins, anchor positions and coordinates of the marker increase in the X
     // direction to the right and in the Y direction down.
     let gameIcon = './assets/images/34B4B704-marker.png';
+
+    if (document.location.href.indexOf("index.html")===-1){
+      gameIcon= '../images/34B4B704-marker.png';
+      console.log(gameIcon);
+   }
   
   
     //center map at game location
