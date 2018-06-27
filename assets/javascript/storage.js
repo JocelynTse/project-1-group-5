@@ -23,45 +23,82 @@ let parent = "";
 let parentPhone = "";
 let phoneType = "";
 
+
+
+
 // Capture input values on submit
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
 
-    var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val().trim();
-    var addressNew = $("#addressPlayer").val() + ", " + $("#cityPlayer").val() + ", " + $("#statePlayer").val();
-    var phoneNew = $("#phoneNumberPlayer").val();
-    var dobNew = $("#DOBPlayer").val();
-    var ageNew = $("#agePlayer").val();
-    var genderNew = $("#genderPlayer").val();
-    var parentNew = $("#nameFirstParent").val() + " " + $("#nameLastParent").val();
-    var parentPhoneNew = $("#phoneNumberParent").val();
-    var phoneTypeNew = $("#phoneTypeParent").val();
+    $("#emptyFields").text(""); //clears modal text on new submit button click
 
-    console.log(nameNew);
-    console.log(addressNew);
-    console.log(phoneNew);
-    console.log(dobNew);
-    console.log(ageNew);
-    console.log(genderNew);
-    console.log(parentNew);
-    console.log(parentPhoneNew);
-    console.log(phoneTypeNew);
+    let emptyFieldsCheck = false;
 
-    // Store input values to firebase
 
-    database.ref().push({
-        name: nameNew,
-        address: addressNew,
-        phone: phoneNew,
-        dob: dobNew,
-        age: ageNew,
-        gender: genderNew,
-        parent: parentNew,
-        parentPhone: parentPhoneNew,
-        phoneType: phoneTypeNew,
+    let valueArray = [$("#nameFirstPlayer"), $("#nameLastPlayer"),
+    $("#addressPlayer"), $("#cityPlayer"),
+    $("#statePlayer"), $("#phoneNumberPlayer"),
+    $("#DOBPlayer"), $("#agePlayer"),
+    $("#genderPlayer"), $("#genderPlayer"),
+    $("#nameFirstParent"), $("#nameLastParent"),
+    $("#phoneNumberParent"), $("#phoneTypeParent")]; // This array holds all form element ids
 
-    })
+    for (i = 0; i < valueArray.length; i++) { // looping through the above array to find any empty fields
+
+        if (valueArray[i].val() == "") {
+
+            $("#submit").addClass("modal-trigger"); // adding this class triggers the modal
+
+            $("#emptyFields").append("<h6>" + "You are missing: " + $(valueArray[i]).attr("id") + "</h6>"); //spitting out empty field names into the modal
+            console.log($(valueArray[i]).attr("id"));
+
+            emptyFieldsCheck = true;
+
+
+
+        }
+
+    }
+
+    if (!emptyFieldsCheck) {
+
+        var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val().trim();
+        var addressNew = $("#addressPlayer").val() + ", " + $("#cityPlayer").val() + ", " + $("#statePlayer").val();
+        var phoneNew = $("#phoneNumberPlayer").val();
+        var dobNew = $("#DOBPlayer").val();
+        var ageNew = $("#agePlayer").val();
+        var genderNew = $("#genderPlayer").val();
+        var parentNew = $("#nameFirstParent").val() + " " + $("#nameLastParent").val();
+        var parentPhoneNew = $("#phoneNumberParent").val();
+        var phoneTypeNew = $("#phoneTypeParent").val();
+
+        console.log(nameNew);
+        console.log(addressNew);
+        console.log(phoneNew);
+        console.log(dobNew);
+        console.log(ageNew);
+        console.log(genderNew);
+        console.log(parentNew);
+        console.log(parentPhoneNew);
+        console.log(phoneTypeNew);
+
+        // Store input values to firebase
+
+        database.ref().push({
+            name: nameNew,
+            address: addressNew,
+            phone: phoneNew,
+            dob: dobNew,
+            age: ageNew,
+            gender: genderNew,
+            parent: parentNew,
+            parentPhone: parentPhoneNew,
+            phoneType: phoneTypeNew,
+
+        });
+        $("#register")[0].reset(); //reset form
+    }
 });
 
 // Pull stored input values to playerlist
@@ -96,4 +133,6 @@ database.ref().on("child_added", function (childSnapshot) {
 }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code)
 });
+
+
 

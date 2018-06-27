@@ -24,8 +24,8 @@ method: "GET"
 
     console.log(moment.unix(response.list[0].dt).format("ddd"));
     $("#day1").text(moment.unix(response.list[0].dt).format("ddd"));
-    $("#day2").text(moment.unix(response.list[7].dt).format("ddd"));
-    $("#day3").text(moment.unix(response.list[15].dt).format("ddd"));
+    $("#day2").text(moment.unix(response.list[9].dt).format("ddd"));
+    $("#day3").text(moment.unix(response.list[17].dt).format("ddd"));
 
   
     $("#icon1").attr("src","http://openweathermap.org/img/w/"+response.list[0].weather[0].icon+".png");
