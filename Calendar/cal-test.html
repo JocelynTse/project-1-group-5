@@ -76,54 +76,60 @@
         <!-- Calendar Starts -->
         <div class="container">
 
-            <div class="card" style="background: black; color: white">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card" style="background: black; color: white">
 
-                <div class="card-body" id="schedule">
+                        <div class="card-body" id="schedule">
+                            <div class="container">
 
-                    <div class="row">
-                        <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col s12">
 
-                            <h4 class="card-header">Soccer Game Schedule</h4>
+                                        <h4 class="card-header" style="background: black; color: white">Soccer Game Schedule</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <th scope="col">Game Date:</th>
+                                        <input type="text" id="dateGame" class="datepicker" placeholder="Pick a Game Date">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <table class="table highlight" id="schedule-table">
+                                            <thead>
+
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h5>Home Team</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Visit Team</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Game Time</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Field Number</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Division</h5>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="data">
+                                                <!-- Insert data rows here -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <th scope="col">Game Date:</th>
-                            <input type="text" id="dateGame" class="datepicker" placeholder="Pick a Game Date">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <table class="table highlight" id="schedule-table">
-                                <thead>
-
-                                    <tr>
-                                        <th scope="col">
-                                            <h5>Home Team</h5>
-                                        </th>
-                                        <th scope="col">
-                                            <h5>Visit Team</h5>
-                                        </th>
-                                        <th scope="col">
-                                            <h5>Game Time</h5>
-                                        </th>
-                                        <th scope="col">
-                                            <h5>Field Number</h5>
-                                        </th>
-                                        <th scope="col">
-                                            <h5>Division</h5>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody id="data">
-                                    <!-- Insert data rows here -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
