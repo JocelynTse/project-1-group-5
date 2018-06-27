@@ -36,11 +36,57 @@ $(document).ready(function () {
     });
 
     $('.materialboxed').materialbox();
+
+    $('.modal').modal();
 });
 
 $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
+});
+
+
+
+
+
+$("#submit").on("click", function(event) {
+    $("#emptyFields").text("");
+
+ let firstname = $("#first_name");
+let lastname = $("#last_name");   
+let valueArray = [firstname,lastname]
+    console.log(valueArray);
+
+    for (i=0 ; i < valueArray.length; i++){
+
+        if (valueArray[i].val() == "") {
+
+            console.log("value is blank");
+            console.log($(valueArray[i]).attr("id"));
+
+                $("#submit").addClass("modal-trigger");
+         
+                $("#emptyFields").append("<h6>"+"You are missing: " +$(valueArray[i]).attr("id")+"</h6>" );
+
+        }
+    }
+
+
+
+
+
+// console.log(firstname);
+// console.log(lastname);
+
+
+// if (firstname == "" || lastname == ""){
+//     console.log("please complete blank fields");
+
+//     $("#submit").addClass("modal-trigger");
+//     $("#emptyFields").text("You are missing first and last name");
+// }
+
+
 });
 
 

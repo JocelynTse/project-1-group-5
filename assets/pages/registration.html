@@ -2,19 +2,7 @@
   <html>
     <head>
       <title>Registration Form</title>
-      <style>
-            /* Always set the map height explicitly to define the size of the div
-             * element that contains the map. */
-            #map {
-              height: 100%;
-            }
-            /* Optional: Makes the sample page fill the window. */
-            html, body {
-              height: 100%;
-              margin: 0;
-              padding: 0;
-            }
-          </style>
+  
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -25,7 +13,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
+    <body style="backgroundr: black">
 
             <div class="row">
                 
@@ -121,6 +109,7 @@
                         <div class="input-field col s6">
                           <input  id="first_name" type="text" class="validate" style="color: white">
                           <label for="first_name">First Name</label>
+
                         </div>
                         <div class="input-field col s6">
                           <input id="last_name" type="text" class="validate" style="color: white">
@@ -163,9 +152,25 @@
                                         <span>Female</span>
                                       </label>
                               </p>
-                              <button class="btn waves-effect waves-light" type="button" style="margin-left: 40px" name="action">Submit
+
+                              
+
+                              <button  class="btn waves-effect waves-light" data-target="modal1"   id="submit" type="button" style="margin-left: 40px" name="action">Submit
                                     <i class="material-icons right">send</i>
-                                  </button>
+                                  </button>   
+                                  
+                                  <!-- modal-trigger -->
+
+                               <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                  <h4>Please complete missing fields</h4>
+                                  <p id="emptyFields">Please complete required fields</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                                </div>
+                              </div>   
+          
                         </div>
                       </div>
                     </div>
