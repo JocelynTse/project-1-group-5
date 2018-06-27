@@ -87,109 +87,131 @@
           <h4 class="card-header" style="background: black; color: white">Registration Form</h5>
             <div class="card-body" id="regForm">
 
-              <form class="col s12"></form>
+              <form class="col s12" id="register">
 
-              <div>
-                <h5 class="card-title">Player Information</h5>
+                <div>
+                  <h5 class="card-title">Player Information</h5>
 
-                <div class="row">
-                  <div class="input-field col s6">
-                    <label for="nameLastPlayer">Last Name</label>
-                    <input type="text" class="form-control validate" id="nameLastPlayer">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <label for="nameLastPlayer">Last Name</label>
+                      <input type="text" class="form-control validate" id="nameLastPlayer">
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="nameFirstPlayer">First Name</label>
+                      <input type="text" class="form-control validate" id="nameFirstPlayer">
+                    </div>
                   </div>
-                  <div class="input-field col s6">
-                    <label for="nameFirstPlayer">First Name</label>
-                    <input type="text" class="form-control validate" id="nameFirstPlayer">
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <label for="phoneNumberPlayer">Phone Number</label>
+                      <input type="text" class="form-control validate" id="phoneNumberPlayer">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <label for="addressPlayer">Address</label>
+                      <input type="text" class="form-control validate" id="addressPlayer">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <label for="cityPlayer">City</label>
+                      <input type="text" class="form-control validate" id="cityPlayer">
+                    </div>
+                    <div class="input-field col s3">
+                      <select id="statePlayer">
+                        <option value="" disabled selected>Choose one</option>
+                        <option value="TX">TX</option>
+                        <option value="WI">WI</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label for="statePlayer">State</label>
+                    </div>
+                    <div class="input-field col s3">
+                      <label for="ZIPPlayer">ZIP Code</label>
+                      <input type="text" class="form-control validate" id="ZIPPlayer">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s4">
+                      <label for="DOBPlayer">Date of Birth</label>
+                      <input type="text" class="datepicker" id="DOBPlayer">
+                    </div>
+                    <div class="input-field col s4">
+                      <label for="agePlayer">Age</label>
+                      <input type="text" class="form-control validate" id="agePlayer">
+                    </div>
+                    <div class="input-field col s4">
+                      <select id="genderPlayer">
+                        <option value="" disabled selected>Choose one</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                      <label for="genderPlayer">Gender</label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div>
+                  <h5 class="card-title">Parent Information</h5>
+                  <br>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <label for="nameLastParent">Last Name</label>
+                      <input type="text" class="form-control validate" id="nameLastParent">
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="nameFirstParent">First Name</label>
+                      <input type="text" class="form-control validate" id="nameFirstParent">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <label for="phoneNumberParent">Phone Number</label>
+                      <input type="text" class="form-control validate" id="phoneNumberParent">
+                    </div>
+                    <div class="input-field col s6">
+                      <select id="phoneTypeParent">
+                        <option value="" disabled selected>Choose one</option>
+                        <option value="Home">Home</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <label for="phoneTypeParent">Phone Type</label>
+                    </div>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="input-field col s6">
-                    <label for="phoneNumberPlayer">Phone Number</label>
-                    <input type="text" class="form-control validate" id="phoneNumberPlayer">
+
+                <!-- Modal Trigger -->
+
+                <!-- <button type="button" class="btn waves-effect waves-light" data-target="modal1" id="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button> -->
+
+                <!-- Modal Trigger -->
+                <button data-target="modal1" class="btn" type="button" id="submit">Submit Info
+                  <i class="material-icons right">send</i>
+                </button>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <h4 class="modalText">Wel need a bit more info..</h4>
+                    <p class="modalText" id="emptyFields"></p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="input-field col s12">
-                    <label for="addressPlayer">Address</label>
-                    <input type="text" class="form-control validate" id="addressPlayer">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s6">
-                    <label for="cityPlayer">City</label>
-                    <input type="text" class="form-control validate" id="cityPlayer">
-                  </div>
-                  <div class="input-field col s3">
-                    <select id="statePlayer">
-                      <option value="" disabled selected>Choose one</option>
-                      <option value="TX">TX</option>
-                      <option value="WI">WI</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    <label for="statePlayer">State</label>
-                  </div>
-                  <div class="input-field col s3">
-                    <label for="ZIPPlayer">ZIP Code</label>
-                    <input type="text" class="form-control validate" id="ZIPPlayer">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s4">
-                    <label for="DOBPlayer">Date of Birth</label>
-                    <input type="text" class="datepicker" id="DOBPlayer">
-                  </div>
-                  <div class="input-field col s4">
-                    <label for="agePlayer">Age</label>
-                    <input type="text" class="form-control validate" id="agePlayer">
-                  </div>
-                  <div class="input-field col s4">
-                    <select id="genderPlayer">
-                      <option value="" disabled selected>Choose one</option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                    </select>
-                    <label for="genderPlayer">Gender</label>
-                  </div>
-                </div>
-
-              </div>
-
-              <div>
-                <h5 class="card-title">Parent Information</h5>
-                <br>
-                <div class="row">
-                  <div class="input-field col s6">
-                    <label for="nameLastParent">Last Name</label>
-                    <input type="text" class="form-control validate" id="nameLastParent">
-                  </div>
-                  <div class="input-field col s6">
-                    <label for="nameFirstParent">First Name</label>
-                    <input type="text" class="form-control validate" id="nameFirstParent">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s6">
-                    <label for="phoneNumberParent">Phone Number</label>
-                    <input type="text" class="form-control validate" id="phoneNumberParent">
-                  </div>
-                  <div class="input-field col s6">
-                    <select id="phoneTypeParent">
-                      <option value="" disabled selected>Choose one</option>
-                      <option value="Home">Home</option>
-                      <option value="Mobile">Mobile</option>
-                      <option value="Work">Work</option>
-                      <option value="Other">Other</option>
-                    </select>
-                    <label for="phoneTypeParent">Phone Type</label>
-                  </div>
-                </div>
-              </div>
-
-              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
 
               </form>
 
@@ -257,26 +279,26 @@
       <div CLass="row">
         <div style="margin-top:30px">
           <div class="col s4">
-              <div class="row">
-                  <a href="">
-                      <p class="footerItem">Events</p>
-                  </a>
-              </div>
-              <div class="row">
-                  <a href="">
-                      <p class="footerItem">Register</p>
-                  </a>
-              </div>
-              <div class="row">
-                  <a href="">
-                      <p class="footerItem">About Us</p>
-                  </a>
-              </div>
-              <div class="row">
-                  <a href="../../index.html">
-                      <p class="footerItem">Home</p>
-                  </a>
-              </div>
+            <div class="row">
+              <a href="">
+                <p class="footerItem">Events</p>
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                <p class="footerItem">Register</p>
+              </a>
+            </div>
+            <div class="row">
+              <a href="">
+                <p class="footerItem">About Us</p>
+              </a>
+            </div>
+            <div class="row">
+              <a href="../../index.html">
+                <p class="footerItem">Home</p>
+              </a>
+            </div>
 
           </div>
 
