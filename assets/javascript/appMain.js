@@ -54,16 +54,23 @@ $(document).ready(function () {
       // fullWidth: true,
       duration: 200,
     });
-    autoplay()  
+      autoplay()  
     
     $('.materialboxed').materialbox();
   });
-  
+  let wait = false;
+
   function autoplay() {
+    if (wait===false){
       $('.carousel').carousel('next');
       setTimeout(autoplay, 8000);
+    }
   }
-  
+
+  //EXTRA: sets up a pause for carousel on mouse hover
+  $(".carousel").hover(function(){wait = true;
+  console.log("IN")},function(){wait=false;console.log("OUT");autoplay()});
+
   //adds Google map to div
   function initMap() {
   
@@ -75,6 +82,11 @@ $(document).ready(function () {
     // Origins, anchor positions and coordinates of the marker increase in the X
     // direction to the right and in the Y direction down.
     let gameIcon = './assets/images/34B4B704-marker.png';
+
+    if (document.location.href.indexOf("index.html")===-1){
+      gameIcon= '../images/34B4B704-marker.png';
+      console.log(gameIcon);
+   }
   
   
     //center map at game location
@@ -133,7 +145,7 @@ $(document).ready(function () {
       map.setCenter(gameLocation)
     });
   }
-  
+
   //autocomplete constructor from Google documentation
   function AutocompleteDirectionsHandler(map) {
     this.map = map;
@@ -159,10 +171,16 @@ $(document).ready(function () {
     //outputs the directions to antoehr empty div ala Google names
     this.directionsDisplay.setPanel(document.getElementById('direction-display'));
   
+    //sets listener on map button
+    $("#map-modal-button").on("click", function(){
+      $("#map-modal").modal();   
+      google.maps.event.trigger(map, "resize");
+    });
+    
     //sets listener on directions button and only activates the modal if it has content
     $("#direction-input").on('click', function () {
       if ($('#direction-display').children().length > 0) {
-        $('.modal').modal();
+        $('#direction-modal').modal();
       }
     });
   
@@ -236,7 +254,8 @@ $(document).ready(function () {
     });
   
   };
-  
+
+
   
   
   

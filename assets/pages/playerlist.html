@@ -2,163 +2,244 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Member Information</title>
-    <!--Reset.css-->
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/stylesMain.css">
-    
 
+    <!--Import Reset CSS-->
+    <link href="../css/reset.css" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
+    <!-- Import materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-   
-    
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Import custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/stylesMain.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 
-        <div class="main-content">
-        
-                <!--Header Section Start-->
-                <div class="row">
-                    <nav style="margin-top: 10px" id="navBar">
-                        <div class="nav-wrapper black">
-                            <a href="#" class="brand-logo center">
-                                <img src="../../assets/images/logosmall.png" alt="" style="opacity: 0.5;">
-                            </a>
-                            <ul id="nav-mobile" class="left hide-on-med-and-down">
-            
-                                <li>
-                                    <a href="../../index.html">
-                                        <img src="../../assets/images/soccer-ball.png" alt="Home" style="opacity: 0.5;">
-                                        <nav1>Home</nav1>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="../../assets/images/soccer-ball.png" alt="Events" style="opacity: 0.5;">
-                                        <nav2>Events</nav2>
-                                    </a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="../../assets/pages/simpleform.html">
-                                        <img src="../../assets/images/soccer-ball.png" alt="Register" style="opacity: 0.5;">
-                                        <nav3>Register</nav3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="../../assets/images/soccer-ball.png" alt="About Us" style="opacity: 0.5;">
-                                        <nav4>About Us</nav4>
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li>
-                                    <a href="">
-                                        <img src="../../assets/images/soccer-ball.png" alt="Sign In" style="opacity: 0.5;">
-                                        <nav5>Sign In</nav5>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="../../assets/images/soccer-ball.png" alt="Admin" style="opacity: 0.5;">
-                                        <nav6>Admin</nav6>
-                                    </a>
-                                </li>
-            
-                            </ul>
-            
-                    </nav>
-                </div>
+    <div class="main-content">
 
-             <!--Header Section End-->
-
-
-
-    <div id="container">
-
+        <!--Header Section Start-->
         <div class="row">
-            <div class="col-lg-12">
-                <div class="card" style="background: black">
-                        
-                    <!-- <div class="card-header">Player List</div> -->
-                    <div class="card-body">
-                        <div class="container">
-                            <h4 class="card-header" id="players"  >Players List</h5>
-                            <table class="table highlight" id="players-table">
-                            
-                                <thead>
-                                    <tr>
-                                        <th scope="col" ><h5 >Player Name</h5></th>
-                                        <th scope="col"><h5>Address</h5></th>
-                                        <th scope="col"><h5>Phone Number</h5></th>
-                                        <th scope="col"><h5>Date of Birth</h5></th>
-                                        <th scope="col"><h5>Age</h5></th>
-                                        <th scope="col"><h5>Gender</h5></th>
-                                        <th scope="col"><h5>Parent Name</h5></th>
-                                        <th scope="col"><h5>Parent Phone Number</h5></th>
-                                        <th scope="col"><h5>Phone Type</h5></th>
-                                    </tr>
-                                </thead>
-                                <tbody id="data">
-                                    <!-- Insert data rows here -->
-                                </tbody>
-                            </table>
+            <nav style="margin-top: 10px" id="navBar">
+                <div class="nav-wrapper black">
+                    <a href="#" class="brand-logo center">
+                        <img src="../../assets/images/logosmall.png" alt="" style="opacity: 0.5;">
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+                        <li>
+                            <a href="../../index.html">
+                                <img src="../../assets/images/soccer-ball.png" alt="Home" style="opacity: 0.5;">
+                                <nav1>Home</nav1>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../assets/images/soccer-ball.png" alt="Events" style="opacity: 0.5;">
+                                <nav2>Events</nav2>
+                            </a>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../assets/pages/simpleform.html">
+                                <img src="../../assets/images/soccer-ball.png" alt="Register" style="opacity: 0.5;">
+                                <nav3>Register</nav3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../assets/images/soccer-ball.png" alt="About Us" style="opacity: 0.5;">
+                                <nav4>About Us</nav4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">
+                                <img src="../../assets/images/soccer-ball.png" alt="Sign In" style="opacity: 0.5;">
+                                <nav5>Sign In</nav5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../assets/images/soccer-ball.png" alt="Admin" style="opacity: 0.5;">
+                                <nav6>Admin</nav6>
+                            </a>
+                        </li>
+
+                    </ul>
+
+            </nav>
+            </div>
+            <!--Header Section End-->
+            <!--Content can begin here -->
+
+
+            <div id="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card" style="background: black">
+
+                            <!-- <div class="card-header">Player List</div> -->
+                            <div class="card-body">
+                                <div class="container">
+                                    <h4 class="card-header" id="players">Players List</h5>
+                                        <table class="table highlight" id="players-table">
+
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <h5>Player Name</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Address</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Phone Number</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Date of Birth</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Age</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Gender</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Parent Name</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Parent Phone Number</h5>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <h5>Phone Type</h5>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="data">
+                                                <!-- Insert data rows here -->
+                                            </tbody>
+                                        </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Map Modal Structure -->
+        <div id="map-modal" class="modal black">
+            <div class="container">
+                <div id="map">
+                </div>
+            </div>
+            <div class="row">
+                <div id="search-directions" class="col s12">
+                    <i id="recenter" class="small material-icons btn-small waves-effect waves-red transparent grey-text text-darken-2 tooltipped"
+                        data-position="left" data-tooltip="re-center map">my_location</i>
+                    <input id="origin-input" type="text" placeholder="Get directions from...">
+                    <i id="direction-input" class="small material-icons waves-effect waves-light btn red lighten-1 modal-trigger tooltipped"
+                        data-position="bottom" data-tooltip="click for list directions" data-target="direction-modal">directions</i>
+                </div>
+            </div>
+            <div id="mode-selector">
+                <div class="row">
+                    <ul class="col s12">
+                        <li>
+                            <a id="changemode-walking" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="walking directions">
+                                <img src='../images/walk_icon.png' alt='Walking'>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="changemode-transit" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="public transit directions">
+                                <img src='../images/bus_icon.png' alt='Transit'>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="changemode-driving" class="btn-floating blue lighten-1 tooltipped" data-position="left" data-tooltip="driving directions">
+                                <img src='../images/car_icon.png' alt='Driving'>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
 
-
-
-
-          <!--Footer Section Begin-->
-  <footer>
-        <div Class="container">
-          <div CLass="row">
-            <div style="margin-top:30px"> 
-                    <div class="col s4" >
-                        <div class="row" >
-                            <p class="footerItem" >Events</p>
-                        </div>
-                        <div class="row" >
-                                <p class="footerItem">Register</p>
-                        </div>
-                        <div class="row" >
-                                <p class="footerItem">About Us</p>
-                        </div>
-                        <div class="row" >
-                                <p class="footerItem">Social</p>
-                        </div>
-                       
-                    </div>
-                    <div class="col s8" >
-                        
-                        <img id="mapblock" src="../../assets/images/gmaps.png" alt="" >
-                    
-                    </div>
-  
-              </div>
-            
-          </div>
+            <!-- Modal Structure -->
+            <div id="direction-modal" class="modal">
+                <a href="#!" class="modal-close waves-effect-white waves-red text-grey red lighten-1 btn-flat">Dismiss</a>
+                <div id="direction-display" class="modal-content">
+                </div>
+            </div>
         </div>
-      </footer>
-  <!--Footer Section End-->
 
-        <!-- JQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-        <!-- JS for storage -->
-        <script type="text/javascript" src="../javascript/storage.js"></script>
+        <!-- END Map Modal Structure -->
 
+
+    </div>
+
+    <!--Footer Section Begin-->
+    <footer>
+        <div Class="container">
+            <div CLass="row">
+                <div style="margin-top:30px">
+                    <div class="col s4">
+                            <div class="row">
+                                    <a href="">
+                                        <p class="footerItem">Events</p>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="">
+                                        <p class="footerItem">Register</p>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="">
+                                        <p class="footerItem">About Us</p>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="../../index.html">
+                                        <p class="footerItem">Home</p>
+                                    </a>
+                                </div>
+
+                    </div>
+                    <div class="col s8">
+                        <a id="map-modal-button" class="modal-trigger" href="#map-modal">
+                            <img id="map-static" src='../images/Capture.PNG' alt='GoogleMap'>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--Footer Section End-->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Load Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <!-- Load Custom JavaScript File-->
+    <!-- JS for map -->
+    <script src="../javascript/appMain.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQSStia1lZuiZOsI89SzlD_r07Fy8Uc8E&libraries=places&callback=initMap"></script>
+    <!-- JS for storage -->
+    <script type="text/javascript" src="../javascript/storage.js"></script>
 </body>
 
 </html>
