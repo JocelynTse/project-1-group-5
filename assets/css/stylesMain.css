@@ -6,10 +6,8 @@
   Then your main content div will scroll over the top of your footer. 
   You will probably want to give your footer a height and your body a padding-bottom of the same height. */
 
-body{
-    /* Solution for links,buttons, etc to work in footer was to 
-        change padding-bottom to margin-bottom; overlap effect still works */
-    margin-bottom:500px;
+  body{
+    padding-bottom:500px;
     background: black;
   }
   .main-content{
@@ -28,7 +26,7 @@ body{
     z-index:-1;
   }
 
-  /* End of scrolly fotter style */
+  /* End of scrolly footer style */
 
 .carousel {
     margin-top: 300px;
@@ -40,8 +38,8 @@ body{
 }
 
 
-/* Positioning rules for soccer balls and Navigation text. Containig block that 
-is bieng position aginst is the parent nav block*/
+/* Positioning rules for soccer balls and Navigation text. Containing block that 
+is being positioned against the parent nav block*/
 
 
 nav1{ 
@@ -131,6 +129,34 @@ nav6{
     color: white;
 }
 
+
+#players {
+    position: relative;
+    top: 150px;
+    background: black; 
+    color: white
+}
+
+#players-table  {
+    margin-top:170px; 
+    background: black;
+    color: white
+
+}
+
+#schedule {
+    position: relative;
+    top: 150px;
+    background: black; 
+    color: white
+}
+
+#schedule-table {
+    background: black;
+    color: white
+
+}
+
 .datepicker-calendar-container{
     color: black;
 }
@@ -140,24 +166,10 @@ nav6{
     color: white;
 }
 
-#players {
-    position: relative;
-    top: 150px;
-    background: black; 
-    color: white
-}
 
-#players-table{
-    margin-top:170px; 
-    background: black;
-    color: white
-
-}
-
-
-/* Formating for the Google Map and map modal */
 #map {
     height: 600px;
+    width: 600px;
   }
 
   #origin-input {
@@ -179,27 +191,11 @@ nav6{
   .btn-floating {
       margin: 10px;
   }
-  
-  #map-static{
-      height: 380px;
-      padding-bottom:20px;
-  }
-
-/* hack found online to dispaly the google dropdown above modal z*/
-  .pac-container {
-    z-index: 1051 !important;
-}
 
   #quote {
     position: relative;
     color: white;
     left: 250px
-  }
-
-  /* chaging modal text color to black z*/
-
-  .modalText{
-      color: black;
   }
 
 
