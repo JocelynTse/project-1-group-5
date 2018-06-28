@@ -49,6 +49,7 @@ $(document).ready(function () {
   $('.sidenav').sidenav({ edge: "right" });
   $('.collapsible').collapsible();
   $('.tooltipped').tooltip();
+  $('.tap-target').tapTarget();
 
     $('.carousel-slider').carousel({
       // fullWidth: true,
@@ -70,6 +71,11 @@ $(document).ready(function () {
   //EXTRA: sets up a pause for carousel on mouse hover
   $(".carousel").hover(function(){wait = true;
  },function(){wait=false;autoplay()});
+
+//EXTRA: About Us feature callout
+$("#about-us-open").on('click', function(){
+$("#about-us").tapTarget('open');
+});
 
   //adds Google map to div
   function initMap() {

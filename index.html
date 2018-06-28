@@ -11,14 +11,15 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Import custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../project-1-group-5/assets/css/stylesMain.css" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="shortcut icon" href="../project-1-group-5/assets/images/logo_favicon.png" >
+
+    <link rel="shortcut icon" href="../project-1-group-5/assets/images/logo_favicon.png">
     <title>Garcia Youth Soccer</title>
 </head>
 
@@ -55,10 +56,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <div id="about-us-open">
                                 <img src="../project-1-group-5/assets/images/soccer-ball.png" alt="About Us" style="opacity: 0.5;">
                                 <nav4>About Us</nav4>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -85,10 +86,48 @@
             </nav>
             </div>
             <!--Header Section End-->
+
+
             <!--Content can begin here -->
 
+            <!-- About Us Tap Target Structure -->
+            <div id="about-us" class="tap-target center-align" data-target="about-us-popout">
+                <img src="../project-1-group-5/assets/images/logosmall.png" alt="logo">
+                <div class="tap-target-content">
+                    <ul class="row left">
+                        <li>
+                            <a class="btn-floating waves-blue btn-large fa fa-facebook" href="https://www.facebook.com/ligajuvenilgarciamke/" target="_blank"></a>
+                            <a href="#" class="btn-floating btn-large fa fa-twitter"></a>
+                        </li>
+                    </ul>
+                    <ul class="row right">
+                        <li>
+                            <a href="#" class="btn-floating btn-large fa fa-facebook"></a>
+                            <a href="#" class="btn-floating btn-large fa fa-twitter"></a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div id="mission-statement" class="row">
+                        <h4>
+                            An all ages, active youth soccer league supporting the youth of greater Milwakee enpowering kids to play, respect and have
+                            fun healthy.
+                        </h4>
+                        <h5>
+                            <italic>
+                                U6 - U14 Divisions, Outdoor Summer/Indoor Winter
+                            </italic>
+                        </h5>
+                    </div>
+                    <div class="row red-text">
+                        <h3>Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+            <!--About Us End-->
 
             <div class="carousel carousel-slider center">
+                <img id="about-us-popout" src="../project-1-group-5/assets/images/soccer-ball.png" alt="Home" style="opacity: 0.5;visibility:hidden;">
+
                 <a id="carousel-main" class="carousel-item" href="#one!">
                     <img class="" src="../project-1-group-5/assets/images/imagejpeg_0.jpg">
                 </a>
