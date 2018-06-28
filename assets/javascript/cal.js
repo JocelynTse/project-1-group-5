@@ -41,6 +41,7 @@ $("#submit").on("click", function (event) {
         fielNm: fielNew,
         uDivision: divNew,
     });
+    
 });
 
 database.ref().on("child_added", function (childSnapshot) {
