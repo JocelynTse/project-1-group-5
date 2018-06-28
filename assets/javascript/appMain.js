@@ -57,6 +57,8 @@ $(document).ready(function () {
       autoplay()  
     
     $('.materialboxed').materialbox();
+    $('.dropdown-trigger').dropdown({"coverTrigger": false,
+                                      "hover": true});
   });
   let wait = false;
 
