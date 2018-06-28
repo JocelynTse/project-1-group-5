@@ -185,7 +185,7 @@ nav6{
       padding-bottom:20px;
   }
 
-/* hack found online to dispaly the google dropdown above modal z*/
+/* hack found online to display the google dropdown above modal z*/
   .pac-container {
     z-index: 1051 !important;
 }
@@ -196,10 +196,21 @@ nav6{
     left: 250px
   }
 
-  /* chaging modal text color to black z*/
+  /* changing modal text color to black z*/
 
   .modalText{
       color: black;
   }
 
+#admin  {
+    padding-top: 250px;
+}
+
+.collection{
+    border: none;
+}
+
+.collection .collection-item {
+    border-bottom: 0px;
+}
 
