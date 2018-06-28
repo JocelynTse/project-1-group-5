@@ -88,6 +88,38 @@ nav6{
 
 /* End of navigation items styling  */
 
+.fa {
+    padding: 30px;
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.tap-target{
+    background-color: white;
+}
+.tap-target-content{
+    padding: 150px 50px 0px 50px !important;
+    top: -80px !important;
+   }
+
+   #mission-statement{
+       padding-top: 100px;
+   }
+
+
 /* Style for footer navigation Items */
 .footerItem{
     font-size: 40px;
