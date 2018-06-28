@@ -17,12 +17,12 @@ url: queryURL,
 method: "GET"
 }).then(function(response) {
 
-    console.log(response)
+    // console.log(response)
  
    
 
 
-    console.log(moment.unix(response.list[0].dt).format("ddd"));
+    // console.log(moment.unix(response.list[0].dt).format("ddd"));
     $("#day1").text(moment.unix(response.list[0].dt).format("ddd"));
     $("#day2").text(moment.unix(response.list[9].dt).format("ddd"));
     $("#day3").text(moment.unix(response.list[17].dt).format("ddd"));
@@ -33,7 +33,7 @@ method: "GET"
     $("#icon3").attr("src","http://openweathermap.org/img/w/"+response.list[17].weather[0].icon+".png");
    
     let min1 = response.list[0].main.temp_min;
-    console.log(Math.round(min1));
+    // console.log(Math.round(min1));
    
     $("#minmax1").text(Math.round((response.list[0].main.temp_min))+"/"+Math.round(response.list[0].main.temp_max));
     $("#minmax2").text(Math.round(response.list[9].main.temp_min)+"/"+Math.round(response.list[0].main.temp_max));
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
   //EXTRA: sets up a pause for carousel on mouse hover
   $(".carousel").hover(function(){wait = true;
-  console.log("IN")},function(){wait=false;console.log("OUT");autoplay()});
+ },function(){wait=false;autoplay()});
 
   //adds Google map to div
   function initMap() {
@@ -85,7 +85,7 @@ $(document).ready(function () {
 
     if (document.location.href.indexOf("index.html")===-1){
       gameIcon= '../images/34B4B704-marker.png';
-      console.log(gameIcon);
+     
    }
   
   

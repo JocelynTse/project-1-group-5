@@ -202,6 +202,11 @@ nav6{
       color: black;
   }
 
+  /* Calendar styles */
+  #event-calendar {
+    margin-top: 300px;
+  }
+  
 #admin  {
     padding-top: 250px;
 }

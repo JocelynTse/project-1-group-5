@@ -31,7 +31,7 @@ $("#submit").on("click", function (event) {
     var fielNew = $("#fieldNum").val().trim();
     var divNew = $("#divNum").val().trim();
 
-    console.log(homeNew);
+    // console.log(homeNew);
 
     database.ref().push({
         gameDt: dateNew,
@@ -62,21 +62,21 @@ database.ref().on("child_added", function (childSnapshot) {
     let divTab = $("<td>").text(uDivision);
 
     dataDate(gameDt, homeTm,visitorTm, gameTm, fielNm, uDivision);
-console.log (localCopy);
+// console.log (localCopy);
     txRow.append(homeTab, visitorTab, timeTab,
         fieldTab, divTab);
 
-$("#schedule").append(txRow);
+$("#schedule-info").append(txRow);
 
 }, function (errorObject) {
     console.log("Errors handled: " + errorObject.code);
 });
 
-console.log (localCopy);
+// console.log (localCopy);
 let choosenDate=[];
 
 $("#dateGame").change(function () {
-    $("#schedule").empty();
+    $("#schedule-info").empty();
 choosenDate = localCopy.filter(function(entry) {
 return entry.gamedt == $("#dateGame").val();
 });
@@ -92,7 +92,7 @@ for (i=0;i< choosenDate.length;i++) {
     txRow.append(homeTab, visitorTab, timeTab,
         fieldTab, divTab);
 
-$("#schedule").append(txRow);
+$("#schedule-info").append(txRow);
 
 }
  
