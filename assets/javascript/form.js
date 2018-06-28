@@ -18,6 +18,7 @@ $("#phoneNumberParent").formatter({
 $("#phoneNumberPlayer").formatter({
   "pattern": '{{999}}-{{999}}-{{9999}}',
   'persistent': true
+
 });
 
 // modal for form validation initialize
