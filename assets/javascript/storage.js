@@ -22,7 +22,7 @@ let gender = "";
 let parent = "";
 let parentPhone = "";
 let phoneType = "";
-
+let parentEmail = "";
 
 
 
@@ -42,7 +42,7 @@ $("#submit").on("click", function (event) {
     $("#DOBPlayer"), $("#agePlayer"),
     $("#genderPlayer"), $("#genderPlayer"),
     $("#nameFirstParent"), $("#nameLastParent"),
-    $("#phoneNumberParent"), $("#phoneTypeParent")]; // This array holds all form element ids
+    $("#phoneNumberParent"), $("#phoneTypeParent"), $("#parentEmail")]; // This array holds all form element ids
 
     for (i = 0; i < valueArray.length; i++) { // looping through the above array to find any empty fields
 
@@ -63,7 +63,7 @@ $("#submit").on("click", function (event) {
 
     if (!emptyFieldsCheck) {
 
-        var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val().trim();
+        var nameNew = $("#nameFirstPlayer").val() + " " + $("#nameLastPlayer").val();
         var addressNew = $("#addressPlayer").val() + ", " + $("#cityPlayer").val() + ", " + $("#statePlayer").val();
         var phoneNew = $("#phoneNumberPlayer").val();
         var dobNew = $("#DOBPlayer").val();
@@ -72,6 +72,7 @@ $("#submit").on("click", function (event) {
         var parentNew = $("#nameFirstParent").val() + " " + $("#nameLastParent").val();
         var parentPhoneNew = $("#phoneNumberParent").val();
         var phoneTypeNew = $("#phoneTypeParent").val();
+        var parentEmailNew = $("#parentEmail").val();
 
         console.log(nameNew);
         console.log(addressNew);
@@ -82,6 +83,7 @@ $("#submit").on("click", function (event) {
         console.log(parentNew);
         console.log(parentPhoneNew);
         console.log(phoneTypeNew);
+        console.log(parentEmailNew);
 
         // Store input values to firebase
 
@@ -95,6 +97,7 @@ $("#submit").on("click", function (event) {
             parent: parentNew,
             parentPhone: parentPhoneNew,
             phoneType: phoneTypeNew,
+            parentEmail: parentEmailNew,
 
         });
         $("#register")[0].reset(); //reset form
@@ -114,6 +117,7 @@ database.ref().on("child_added", function (childSnapshot) {
     parent = childSnapshot.val().parent;
     parentPhone = childSnapshot.val().parentPhone;
     phoneType = childSnapshot.val().phoneType;
+    parentEmail = childSnapshot.val().parentEmail;
 
     let tRow = $("<tr>");
 
@@ -126,8 +130,9 @@ database.ref().on("child_added", function (childSnapshot) {
     let parentTab = $("<td>").text(parent);
     let parentPhoneTab = $("<td>").text(parentPhone);
     let phoneTypeTab = $("<td>").text(phoneType);
+    let parentEmailTab = $("<td>").text(parentEmail);
 
-    tRow.append(nameTab, addressTab, phoneTab, dobTab, ageTab, genderTab, parentTab, parentPhoneTab, phoneTypeTab);
+    tRow.append(nameTab, addressTab, phoneTab, dobTab, ageTab, genderTab, parentTab, parentPhoneTab, phoneTypeTab, parentEmailTab);
     $("tbody").append(tRow);
 
 }, function (errorObject) {
