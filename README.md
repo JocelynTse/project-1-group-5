@@ -2,19 +2,21 @@
 
 * Project Manager: Jacob George
 * Git Master: Jocelyn Tse
+* Deployed Project: https://jocelyntse.github.io/project-1-group-5/
+* Code on GitHub: https://github.com/JocelynTse/project-1-group-5.git
 
 # PROJECT PROPOSAL : Central Hub for Sporting Associations
 ### Introduction
 UT Coding Bootcamp – Project team #5 was formed to complete project #1 requirements
 The team will execute a web development initiative to improve work processes and user experience surrounding sports registration.
-The intended software will provide a central hub for sporting associations management to move away from a manual paper or excel based work processes as well provide an enhanced user experience to its participating members (up to 2000 unique members)
+The intended software will provide a central hub for sporting associations management to move away from a manual paper or Microsoft Excel-based work processes, as well provide an enhanced user experience to its participating members (up to 2000 unique members).
 The intended development effort is to be undertaken using an Agile framework based on a most viable product definition. Sprint plans will be laid out as part of Phase 1 kick off activities.
  
 ### Needs/Problems
-Paper or excel based approaches are common ways to manage and run sporting associations. These associations typically start small thus making these techniques a quick and dirty method to hit the ground running without added costs or administrative overheads. However, for obvious reasons these do not allow management to scale to accommodate growth mostly due to:
-* Creation of excel hell – an inability to easily store, access, update membership information among association team members
+Paper or Microsoft Excel-based approaches are common ways to manage and run sporting associations. These associations typically start small, thus making these techniques a quick and easy method to hit the ground running without added costs or administrative overheads. However, for obvious reasons, these do not allow management to scale to accommodate growth mostly due to:
+* Creation of "Excel hell" – an inability to easily store, access, update membership information among association team members
 * Inability to quickly share information and updates with members
-* Inability for members to quickly search , find and get involved in sporting opportunities
+* Inability for members to quickly search for and get involved in sporting opportunities
 * Inability to audit outstanding membership dues
 
 ### Goals/Objectives
@@ -66,7 +68,7 @@ Eleda Johnson | Team Member
 Karla Martinez | Team Member
 Jocelyn Tse | Git Master/Team Member
 Jacob George | Project Manager/Team Member
-William Shepheard | Instructor/Evaluator
+William Shepherd | Instructor/Evaluator
 Paul Viola | TA
 Michael Morfessis | TA
 
@@ -74,7 +76,7 @@ Michael Morfessis | TA
 ### Evaluation
 Project evaluation will be
 * Based on completion of scope of work items in Section 5.
-* Done by William Shepheard based on UT Coding Bootcamp grading requirements
+* Done by William Shepherd based on UT Coding Bootcamp grading requirements
 
 ### Next Steps
 * Proposal Approval (It has been approved)
@@ -85,16 +87,16 @@ Project evaluation will be
 ### Appendix
 #### Tasks List
 * Kickoff meeitng - complete
-* Create wireframe -- in progress
-* Confirm styling for MVP -- in progress
-* Complete Materilize components review - in progress
-* Coding Tasks assignments - not started
-* Start Build - not started
+* Create wireframe -- complete
+* Confirm styling for MVP -- complete
+* Complete Materialize components review - complete
+* Coding Tasks assignments - complete
+* Start Build - complete
 #### More detailed tasks (WIP)
 * Create user validation logic
 * Log in process decision
 * Landing page content confirmation
-* Find inspiration model site -- complete
+* Find inspiration model site
 * Create schedule calendar
 * Admin access process
 * Create up to date score tracker: update score after game
