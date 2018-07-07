@@ -2,6 +2,8 @@
 
 * Project Manager: Jacob George
 * Git Master: Jocelyn Tse
+* Deployed Project: https://jocelyntse.github.io/project-1-group-5/
+* Code on GitHub: https://github.com/JocelynTse/project-1-group-5.git
 
 # PROJECT PROPOSAL : Central Hub for Sporting Associations
 ### Introduction
